@@ -1,0 +1,33 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFrameworks>.net8.0-windows7.0</TargetFrameworks>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+    </PropertyGroup>
+
+    <Choose>
+        <When Condition="'$(SolutionName)'=='S4ModdingFramework'">
+            <ItemGroup>
+                <ProjectReference Include="..\..\ForgeEngines\UX\UX-Engine.csproj" />
+            </ItemGroup>
+        </When>
+        <Otherwise>
+            <ItemGroup>
+                <PackageReference Include="S4Forge" Version="0.8.1" />
+                <PackageReference Include="S4APIWrapper" Version="0.8.*" />
+                <PackageReference Include="UX-Engine" Version="0.9.*" />
+            </ItemGroup>
+        </Otherwise>
+    </Choose>
+
+    <Import Project="$(ProjectDir)ForgeBuild.props" />
+
+    <ItemGroup>
+        <PackageReference Include="ForgeSDK" Version="0.4.1">
+            <PrivateAssets>all</PrivateAssets>
+        </PackageReference>
+    </ItemGroup>
+
+</Project>

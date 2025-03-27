@@ -1,0 +1,13 @@
+{
+  "name": "Debug Menu",
+  "id": "debug-menu",
+  "assets": {
+    "uri": "Url to download release output assets, e.g. gitlab release url"
+  },
+  "clearResidualFiles": true,
+  "version": "1.0.0",
+  "type": "plugin",
+  "entryPoint": "DebugPlugin.dll",
+  "relationships": [],
+  "embedded": true
+}
