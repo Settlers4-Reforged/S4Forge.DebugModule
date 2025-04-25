@@ -16,7 +16,7 @@ using Forge.UX.UI.Prefabs.Text;
 
 using System.Text;
 
-namespace DebugPlugin {
+namespace DebugModule {
     public class ConfigDebugMenu : IPluginScene {
         readonly IConfigApi configApi;
 

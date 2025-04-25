@@ -16,7 +16,7 @@ using Forge.UX.UI.Prefabs.Groups;
 using Forge.UX.UI.Prefabs.Groups.Layout;
 using Forge.UX.UI.Prefabs.Text;
 
-namespace DebugPlugin {
+namespace DebugModule {
     public class EntityDebugMenu : IPluginScene {
         readonly IInputManager inputManager;
         readonly IEventApi eventManager;

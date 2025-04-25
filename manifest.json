@@ -6,8 +6,8 @@
   },
   "clearResidualFiles": true,
   "version": "1.0.0",
-  "type": "plugin",
-  "entryPoint": "DebugPlugin.dll",
+  "type": "module",
+  "entryPoint": "DebugModule.dll",
   "relationships": [],
-  "embedded": true
+  "embedded": false
 }

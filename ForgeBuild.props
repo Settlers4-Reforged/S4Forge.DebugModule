@@ -2,17 +2,15 @@
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
     <!-- Forge Build System: -->
     <PropertyGroup>
-        <ProjectType>Plugin</ProjectType>
+        <ProjectType>Module</ProjectType>
     </PropertyGroup>
 
     <!-- Manifest: -->
     <PropertyGroup>
         <ManifestId>debug-menu</ManifestId>
         <ManifestName>Debug Menu</ManifestName>
-        <ManifestType>plugin</ManifestType>
         <ManifestAssetUrl>Url to download release output assets, e.g. gitlab release url</ManifestAssetUrl>
         <ManifestClearResidualFiles>true</ManifestClearResidualFiles>
-        <ManifestEmbedded>true</ManifestEmbedded>
     </PropertyGroup>
     <!-- <ItemGroup>
         Files to be ignored when updating/clearing residual files. Could be used to keep logs, settings, etc.
